@@ -3,6 +3,8 @@ import './App.css'
 import { ToastContainer } from 'react-toastify';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import Box from './Components/Box';
+import Container from './Components/Container';
 
 
 
@@ -12,6 +14,10 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
+      <Box></Box>
+
+
+
       <Footer></Footer>
       <ToastContainer></ToastContainer>
     </>
