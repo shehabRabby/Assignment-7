@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { ToastContainer } from 'react-toastify';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
 
   return (
     <>
-      <h1 className='text-red-400'>i am here</h1>
+      <Navbar></Navbar>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
     </>
   )
