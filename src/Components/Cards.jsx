@@ -1,7 +1,7 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-const Cards = ({issue,pickCard,setPickCard}) => {
+const Cards = ({issue,pickCard,setPickCard,resolved,setResolved}) => {
     const cardClicked = (issue) =>{
         // console.log("Yes Click me")
         setPickCard([...pickCard,issue])
@@ -25,7 +25,7 @@ const Cards = ({issue,pickCard,setPickCard}) => {
               <span>{issue.customer}</span>
               <span>{issue.createdAt}</span>
             </div>
-            
+
         </div>
     );
 };
