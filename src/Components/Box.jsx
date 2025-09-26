@@ -16,13 +16,13 @@ const Box = ({fetchPromise,resolved,setResolved}) => {
     <div className="bg-gray-100 p-3">
     <Container>
       <div className="flex flex-col sm:flex-row gap-8 py-4">
-        <div className="min-h-55 box1-bg-image box-design">
-          <h1 className="text-xl">In Progress</h1>
-          <span className="text-4xl font-semibold">{inProgress.length}</span>
+        <div className="min-h-70 box1-bg-image box-design">
+          <h1 className="text-2xl mb-3">In Progress</h1>
+          <span className="text-5xl font-semibold">{inProgress.length}</span>
         </div>
-        <div className="min-h-55 box2-bg-image box-design bg-cover">
-          <h1 className="text-xl">Resolved</h1>
-          <span className="text-4xl font-semibold">{resolved.length}</span>
+        <div className="min-h-70 box2-bg-image box-design bg-cover">
+          <h1 className="text-2xl mb-3">Resolved</h1>
+          <span className="text-5xl font-semibold">{resolved.length}</span>
         </div>
       </div>
     </Container>

@@ -24,28 +24,10 @@
 }
 
 .box1-bg-image {
-  background-image: linear-gradient(to right, #6b21a8fc, #c084fcc4),
-    url(assets/left.png);
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 1rem;
+  background-image: linear-gradient(to right, #6b21a8fc, #c084fcc4);
 }
 .box2-bg-image {
-  background-image: linear-gradient(to right, #a4deabfc, #108b1f),
-    url(assets/right.png);
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 1rem;
+  background-image: linear-gradient(to right, #68d779fc, #0f6d17c4);
+
 }
+
