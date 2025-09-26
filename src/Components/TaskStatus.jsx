@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const TaskStatus = ({ pickCard, setPickCard }) => {
   // console.log(pickCard)
@@ -13,7 +14,8 @@ const TaskStatus = ({ pickCard, setPickCard }) => {
         return (
           <div className="bg-white p-3 rounded-sm shadow-sm mb-2 hover:border-green-300 hover:border">
             <h2 className="font-semibold">{card.title}</h2>
-            <button className="bg-green-600 text-white w-full py-1 font-mono rounded-sm shadow-sm cursor-pointer mt-2">
+            <button onClick={() => toast(`${card.title} marked as Complete ✅`)}
+             className="bg-green-600 text-white w-full py-1 font-mono rounded-sm shadow-sm cursor-pointer mt-2">
               Compelete
             </button>
           </div>
