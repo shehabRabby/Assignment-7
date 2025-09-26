@@ -17,7 +17,10 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Box></Box>
+
+      <Suspense>
+        <Box fetchPromise = {fetchPromise}></Box>
+      </Suspense>
 
       <Suspense fallback={"Data Loading wait a second...."}>
         <Tickets fetchPromise = {fetchPromise}></Tickets>
