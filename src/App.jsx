@@ -1,10 +1,11 @@
-import { Suspense} from "react";
+import { Suspense, useState} from "react";
 import "./App.css";
 import { ToastContainer } from "react-toastify";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Box from "./Components/Box";
 import Tickets from "./Components/Tickets";
+import { use } from "react";
 
 const fetchData = async()=>{
   const result = await fetch("/data.json");
@@ -14,16 +15,21 @@ const fetchData = async()=>{
 function App() {
   const fetchPromise = fetchData();
 
+  const [pickCard,setPickCard] = useState([]);
+  const [resolved,setResolved] = useState([])
+
+
   return (
     <>
       <Navbar></Navbar>
 
-      <Suspense>
-        <Box fetchPromise = {fetchPromise}></Box>
+      <Suspense fallback={"wait"}>
+        <Box fetchPromise = {fetchPromise} resolved={resolved} setResolved={setResolved}></Box>
       </Suspense>
 
       <Suspense fallback={"Data Loading wait a second...."}>
-        <Tickets fetchPromise = {fetchPromise}></Tickets>
+        <Tickets fetchPromise = {fetchPromise}
+        pickCard={pickCard} setPickCard={setPickCard} resolved={resolved} setResolved={setResolved}></Tickets>
       </Suspense>
 
       <Footer></Footer>

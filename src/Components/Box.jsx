@@ -3,13 +3,12 @@ import Container from "./Container";
 import leftImg from '../assets/left.png';
 import rightImg from '../assets/right.png';
 
-const Box = ({fetchPromise}) => {
+const Box = ({fetchPromise,resolved,setResolved}) => {
 
   const initialTickets = use(fetchPromise);
   // console.log(initialTickets)
   const [data,setData] = useState(initialTickets);
 // console.log(data)
-
 
   const inProgress = data.filter((items) => items.status == "In-progress");
 
@@ -23,7 +22,7 @@ const Box = ({fetchPromise}) => {
         </div>
         <div className="border min-h-55 box-design bg-cover bg-center bg-gradient-to-l from-green-800 to-green-400">
           <h1 className="text-xl">Resolved</h1>
-          <span className="text-4xl font-semibold">0</span>
+          <span className="text-4xl font-semibold">{resolved.length}</span>
         </div>
       </div>
     </Container>

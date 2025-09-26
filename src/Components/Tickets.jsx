@@ -4,7 +4,7 @@ import Cards from "./Cards";
 import TaskStatus from "./TaskStatus";
 import Resolved from "./Resolved";
 
-const Tickets = ({fetchPromise}) => {
+const Tickets = ({fetchPromise,pickCard,setPickCard,resolved,setResolved}) => {
 
     const initialTickets = use(fetchPromise);
     // here i change all 
@@ -12,13 +12,13 @@ const Tickets = ({fetchPromise}) => {
     // console.log(data);
 
 
-    const [pickCard,setPickCard] = useState([]);
+    // const [pickCard,setPickCard] = useState([]);
     // console.log(pickCard)
 
   return (
     <div className="bg-gray-100">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6 bg-gray-100 min-h-screen">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 py-10 bg-gray-100 min-h-screen">
           {/* left section here  */}
           <div className="lg:col-span-2">
                <h2 className="text-2xl font-bold mb-4">Customer Tickets</h2>
@@ -27,7 +27,14 @@ const Tickets = ({fetchPromise}) => {
                  {
                     data.map((issue,index) => {
                       return(
-                        <Cards key={index} issue={issue} pickCard ={pickCard} setPickCard={setPickCard}></Cards>
+                        <Cards 
+                         key={index} 
+                         issue={issue}
+                         pickCard ={pickCard}
+                         setPickCard={setPickCard}
+                         resolved={resolved}
+                         setResolved={setResolved}>
+                        </Cards>
                       )
                     })
                  }
@@ -36,8 +43,8 @@ const Tickets = ({fetchPromise}) => {
 
           {/* Right Section here*/}
           <div className="p-4 rounded-lg">
-            <TaskStatus pickCard ={pickCard} setPickCard={setPickCard}></TaskStatus>
-            <Resolved pickCard ={pickCard} setPickCard={setPickCard}></Resolved>
+            <TaskStatus data={data} setData={setData} pickCard ={pickCard} setPickCard={setPickCard} resolved={resolved} setResolved={setResolved}></TaskStatus>
+            <Resolved resolved={resolved} setResolved={setResolved}></Resolved>
           </div>
 
         </div>
