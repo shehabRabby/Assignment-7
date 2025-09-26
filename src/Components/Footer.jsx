@@ -47,19 +47,19 @@ const Footer = () => {
             <h1 className="text-xl font-bold">Social Links</h1>
             <ul className="text-gray-400 space-y-1">
               <li>
-                <img src="" alt="" />
+                <img src="#" alt="Facebook" />
                 CS-Ticket System
               </li>
               <li>
-                <img src="" alt="" />
+                <img src="#" alt="linkdin" />
                 CS-Ticket System
               </li>
               <li>
-                <img src="" alt="" />
+                <img src="#" alt="Twiter" />
                 CS-Ticket System
               </li>
               <li>
-                <img src="" alt="" />
+                <img src="#" alt="Youtube" />
                 support@cst.com
               </li>
             </ul>

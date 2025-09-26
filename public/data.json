@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1001,
+    "title": "Login not working",
+    "description": "Customer unable to log in to the portal. They tried multiple browsers but the issue persists, blocking their access to critical tools.",
+    "customer": "John Smith",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1002,
+    "title": "Payment gateway issue",
+    "description": "Transactions failing during checkout. Customers report that their cards are charged but orders aren’t confirmed, leading to frustration.",
+    "customer": "Alice Johnson",
+    "priority": "HIGH PRIORITY",
+    "status": "In-progress",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1003,
+    "title": "Slow dashboard loading",
+    "description": "Dashboard takes too long to load data. It sometimes freezes for more than 30 seconds, making it difficult for users to track progress.",
+    "customer": "Michael Brown",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1004,
+    "title": "Password reset email not received",
+    "description": "User not getting reset email after request. They’ve checked spam folders but nothing arrives, preventing them from resetting credentials.",
+    "customer": "Emily Davis",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1005,
+    "title": "UI alignment bug",
+    "description": "Buttons overlap on mobile screen. The issue mostly occurs on iOS devices and breaks the layout, making forms difficult to submit.",
+    "customer": "David Wilson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In-progress",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1006,
+    "title": "Invoice not generated",
+    "description": "Customer unable to download invoices. This has caused delays in financial reporting and some clients are requesting urgent fixes.",
+    "customer": "Sophia Martinez",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1007,
+    "title": "Notifications delayed",
+    "description": "System notifications are delayed by hours. This is creating confusion since users don’t get timely alerts about updates or approvals.",
+    "customer": "James Anderson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In-progress",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1008,
+    "title": "Profile picture upload failed",
+    "description": "Users cannot upload their profile pictures. The upload either times out or shows an unsupported file type error for valid images.",
+    "customer": "Olivia Thomas",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1009,
+    "title": "App crashing on startup",
+    "description": "Mobile app crashes immediately after launch. Several Android devices have reported this, making the app completely unusable.",
+    "customer": "William Taylor",
+    "priority": "HIGH PRIORITY",
+    "status": "In-progress",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1010,
+    "title": "Search not returning results",
+    "description": "Search functionality not working properly. Even when users type exact keywords, no results are displayed, causing major confusion.",
+    "customer": "Isabella Lee",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1011,
+    "title": "Report export issue",
+    "description": "Users unable to export reports as PDF. The system hangs indefinitely and forces them to refresh, losing unsaved progress.",
+    "customer": "Ethan Harris",
+    "priority": "LOW PRIORITY",
+    "status": "In-progress",
+    "createdAt": "1/2/2025"
+  },
+  {
+    "id": 1012,
+    "title": "Broken links on homepage",
+    "description": "Some navigation links are broken. Clicking them leads to a 404 page, confusing first-time visitors and reducing trust.",
+    "customer": "Mia Clark",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "1/2/2025"
+  }
+]

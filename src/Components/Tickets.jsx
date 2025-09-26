@@ -1,7 +1,11 @@
-import React from "react";
+import React, { use } from "react";
 import Container from "./Container";
 
-const Tickets = () => {
+const Tickets = ({fetchPromise}) => {
+
+    const initialTickets = use(fetchPromise);
+    // console.log(initialTickets)
+
   return (
     <div className="bg-gray-100">
       <Container>
@@ -11,20 +15,26 @@ const Tickets = () => {
                <h2 className="text-2xl font-bold mb-4">Customer Tickets</h2>
                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                  {/*All Ticket Cards start here */}
-                 <div className="bg-white p-4 rounded-lg shadow-sm">
-                     <div className="flex justify-between items-start mb-2">
-                       <h3 className="font-semibold text-lg">Login Issues - Can't Access Account</h3>
-                       <span className="bg-green-100 text-green-800 text-sm px-2 py-1 rounded-full flex items-center gap-1 cursor-pointer">
-                         <span><button className="h-3 w-3 rounded-full bg-green-700 flex"></button></span>Open
-                       </span>
-                     </div>
-                     <p className="text-sm text-gray-600 mb-3">Customer is unable to log in to their account. They've tried resetting their password multiple times but still</p>
-                     <div className="flex justify-between items-center text-sm text-gray-500">
-                       <span>#1001<span className="text-red-500 font-semibold ml-3">HIGH PRIORITY</span></span>
-                       <span>John Smith</span>
-                       <span>1/15/2024</span>
-                     </div>
-                 </div>
+                 {
+                    initialTickets.map((issue) => {
+                      return(
+                        <div className="bg-white p-4 rounded-lg shadow-sm hover:border border-gray-300">
+                           <div className="flex justify-between items-start mb-2">
+                             <h3 className="font-semibold text-lg">{issue.title}</h3>
+                             <span className={`text-sm px-2 py-1 rounded-full flex items-center gap-1 cursor-pointer ${issue.status == "Open" ? "bg-green-100":"bg-yellow-100"}`}>
+                               <span><button className={`h-3 w-3 rounded-full  flex ${issue.status == "Open" ? "bg-green-700":"bg-yellow-500"}`}></button></span>{issue.status}
+                             </span>
+                           </div>
+                           <p className="text-sm text-gray-600 mb-3">{issue.description}</p>
+                           <div className="flex justify-between items-center text-sm text-gray-500">
+                             <span>#{issue.id}<span className={`font-semibold ml-3 ${issue.priority == "HIGH PRIORITY" ?"text-red-500" : issue.priority == "LOW PRIORITY" ? "text-green-500" : "text-yellow-500"}`}>{issue.priority}</span></span>
+                             <span>{issue.customer}</span>
+                             <span>{issue.createdAt}</span>
+                           </div>
+                       </div>
+                      )
+                    })
+                 }
                </div>
           </div>
 

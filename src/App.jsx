@@ -1,20 +1,28 @@
-import { useState } from "react";
+import { Suspense} from "react";
 import "./App.css";
 import { ToastContainer } from "react-toastify";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Box from "./Components/Box";
-import Container from "./Components/Container";
 import Tickets from "./Components/Tickets";
 
+const fetchData = async()=>{
+  const result = await fetch("/data.json");
+  return result.json();
+}
+
 function App() {
-  const [count, setCount] = useState(0);
+  const fetchPromise = fetchData();
 
   return (
     <>
       <Navbar></Navbar>
       <Box></Box>
-      <Tickets></Tickets>
+
+      <Suspense fallback={"Data Loading wait a second...."}>
+        <Tickets fetchPromise = {fetchPromise}></Tickets>
+      </Suspense>
+
       <Footer></Footer>
       <ToastContainer></ToastContainer>
     </>
