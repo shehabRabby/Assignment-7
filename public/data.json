@@ -6,7 +6,7 @@
     "customer": "John Smith",
     "priority": "HIGH PRIORITY",
     "status": "Open",
-    "createdAt": "1/2/2025"
+    "createdAt": "01/02/2025"
   },
   {
     "id": 1002,
@@ -15,7 +15,7 @@
     "customer": "Alice Johnson",
     "priority": "HIGH PRIORITY",
     "status": "In-progress",
-    "createdAt": "1/2/2025"
+    "createdAt": "03/02/2025"
   },
   {
     "id": 1003,
@@ -24,7 +24,7 @@
     "customer": "Michael Brown",
     "priority": "MEDIUM PRIORITY",
     "status": "Open",
-    "createdAt": "1/2/2025"
+    "createdAt": "05/02/2025"
   },
   {
     "id": 1004,
@@ -32,8 +32,8 @@
     "description": "User not getting reset email after request. They’ve checked spam folders but nothing arrives, preventing them from resetting credentials.",
     "customer": "Emily Davis",
     "priority": "LOW PRIORITY",
-    "status": "Open",
-    "createdAt": "1/2/2025"
+    "status": "In-progress",
+    "createdAt": "07/02/2025"
   },
   {
     "id": 1005,
@@ -42,7 +42,7 @@
     "customer": "David Wilson",
     "priority": "MEDIUM PRIORITY",
     "status": "In-progress",
-    "createdAt": "1/2/2025"
+    "createdAt": "09/02/2025"
   },
   {
     "id": 1006,
@@ -51,7 +51,7 @@
     "customer": "Sophia Martinez",
     "priority": "HIGH PRIORITY",
     "status": "Open",
-    "createdAt": "1/2/2025"
+    "createdAt": "11/02/2025"
   },
   {
     "id": 1007,
@@ -59,8 +59,8 @@
     "description": "System notifications are delayed by hours. This is creating confusion since users don’t get timely alerts about updates or approvals.",
     "customer": "James Anderson",
     "priority": "MEDIUM PRIORITY",
-    "status": "In-progress",
-    "createdAt": "1/2/2025"
+    "status": "Open",
+    "createdAt": "13/02/2025"
   },
   {
     "id": 1008,
@@ -68,8 +68,8 @@
     "description": "Users cannot upload their profile pictures. The upload either times out or shows an unsupported file type error for valid images.",
     "customer": "Olivia Thomas",
     "priority": "LOW PRIORITY",
-    "status": "Open",
-    "createdAt": "1/2/2025"
+    "status": "In-progress",
+    "createdAt": "15/02/2025"
   },
   {
     "id": 1009,
@@ -78,7 +78,7 @@
     "customer": "William Taylor",
     "priority": "HIGH PRIORITY",
     "status": "In-progress",
-    "createdAt": "1/2/2025"
+    "createdAt": "17/02/2025"
   },
   {
     "id": 1010,
@@ -87,7 +87,7 @@
     "customer": "Isabella Lee",
     "priority": "MEDIUM PRIORITY",
     "status": "Open",
-    "createdAt": "1/2/2025"
+    "createdAt": "19/02/2025"
   },
   {
     "id": 1011,
@@ -95,8 +95,8 @@
     "description": "Users unable to export reports as PDF. The system hangs indefinitely and forces them to refresh, losing unsaved progress.",
     "customer": "Ethan Harris",
     "priority": "LOW PRIORITY",
-    "status": "In-progress",
-    "createdAt": "1/2/2025"
+    "status": "Open",
+    "createdAt": "21/02/2025"
   },
   {
     "id": 1012,
@@ -104,7 +104,7 @@
     "description": "Some navigation links are broken. Clicking them leads to a 404 page, confusing first-time visitors and reducing trust.",
     "customer": "Mia Clark",
     "priority": "LOW PRIORITY",
-    "status": "Open",
-    "createdAt": "1/2/2025"
+    "status": "In-progress",
+    "createdAt": "23/02/2025"
   }
 ]

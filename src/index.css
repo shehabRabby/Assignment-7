@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
 .box-design {
   @apply w-full text-white text-center flex flex-col justify-center rounded-sm;
 }

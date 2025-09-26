@@ -23,7 +23,7 @@ const TaskStatus = ({
     }
 
     setResolved((element) => [...element, upgradeCard]);
-    toast(`${card.title} marked as Complete ✅`);
+    toast(`${card.title} marked as Complete 🏆🏆`);
   };
 
   return (
