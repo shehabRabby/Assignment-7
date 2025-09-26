@@ -23,11 +23,11 @@ function App() {
     <>
       <Navbar></Navbar>
 
-      <Suspense fallback={"wait"}>
+      <Suspense fallback={""}>
         <Box fetchPromise = {fetchPromise} resolved={resolved} setResolved={setResolved}></Box>
       </Suspense>
 
-      <Suspense fallback={"Data Loading wait a second...."}>
+      <Suspense fallback={<div className="loader min-h-[550px]"> </div>}>
         <Tickets fetchPromise = {fetchPromise}
         pickCard={pickCard} setPickCard={setPickCard} resolved={resolved} setResolved={setResolved}></Tickets>
       </Suspense>

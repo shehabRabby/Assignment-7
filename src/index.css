@@ -1,5 +1,51 @@
 @import "tailwindcss";
 @plugin "daisyui";
-.box-design{
-    @apply w-full text-white text-center flex flex-col justify-center rounded-sm;
+.box-design {
+  @apply w-full text-white text-center flex flex-col justify-center rounded-sm;
+}
+
+.loader {
+  border: 4px solid #035703;
+  border-top: 4px solid #d1cb0e;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box1-bg-image {
+  background-image: linear-gradient(to right, #6b21a8fc, #c084fcc4),
+    url(assets/left.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+}
+.box2-bg-image {
+  background-image: linear-gradient(to right, #a4deabfc, #108b1f),
+    url(assets/right.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1rem;
 }
