@@ -1,6 +1,5 @@
-import React from "react";
 
-const Resolved = ({resolved, setResolved }) => {
+const Resolved = ({ resolved }) => {
   return (
     <div>
       <h3 className="text-xl font-bold mb-2">Resolved Task</h3>
@@ -10,7 +9,7 @@ const Resolved = ({resolved, setResolved }) => {
       ) : (
         <div className="space-y-2">
           {resolved.map((task) => (
-            <div className="bg-blue-100 p-3 rounded-sm shadow-sm mt-2 ">
+            <div key={task.id} className="bg-blue-100 p-3 rounded-sm shadow-sm mt-2 ">
               <h2 className="font-semibold text-center">{task.title}</h2>
             </div>
           ))}

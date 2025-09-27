@@ -1,9 +1,19 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+.inProgress_Resolve {
+  @apply text-center flex flex-col justify-center text-white;
+}
 
-.box-design {
-  @apply w-full text-white text-center flex flex-col justify-center rounded-sm;
+.box_style {
+  @apply rounded-sm min-h-70 w-full flex justify-between relative overflow-hidden;
+}
+
+.box_bg_image1_style {
+  @apply h-full absolute left-0 top-0 object-cover;
+}
+.box_bg_image2_style {
+  @apply h-full absolute right-0 top-0 object-cover;
 }
 
 .loader {
@@ -25,11 +35,9 @@
   }
 }
 
-.box1-bg-image {
+.box1-bg-linearColor {
   background-image: linear-gradient(to right, #6b21a8fc, #c084fcc4);
 }
-.box2-bg-image {
+.box2-bg-linearColor {
   background-image: linear-gradient(to right, #68d779fc, #0f6d17c4);
-
 }
-

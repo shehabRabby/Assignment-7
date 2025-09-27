@@ -1,4 +1,4 @@
-import React from "react";
+
 import Container from "./Container";
 
 const Footer = () => {
@@ -47,26 +47,28 @@ const Footer = () => {
             <h1 className="text-xl font-bold">Social Links</h1>
             <ul className="text-gray-400 space-y-1">
               <li>
-                <img src="#" alt="Facebook" />
-                CS-Ticket System
+                <i className="fa-brands fa-facebook mr-2"></i>
+                @CS-Ticket System
               </li>
               <li>
-                <img src="#" alt="linkdin" />
-                CS-Ticket System
+                <i className="fa-brands fa-square-linkedin mr-2"></i>
+                @CS-Ticket System
               </li>
               <li>
-                <img src="#" alt="Twiter" />
-                CS-Ticket System
+                <i className="fa-brands fa-x-twitter mr-2"></i>
+                @CS-Ticket System
               </li>
               <li>
-                <img src="#" alt="Youtube" />
+                <i className="fa-solid fa-envelope-open-text mr-2"></i>
                 support@cst.com
               </li>
             </ul>
           </div>
         </div>
         <div className="text-center mt-10">
-            <p className=" border-t border-gray-600 text-gray-300 py-5">@2025 CS-Ticket System. All rights reserved.</p>
+          <p className=" border-t border-gray-600 text-gray-300 py-5">
+            @2025 CS-Ticket System. All rights reserved.
+          </p>
         </div>
       </Container>
     </div>

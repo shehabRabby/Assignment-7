@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { toast } from 'react-toastify';
 
 const Cards = ({issue,pickCard,setPickCard,resolved,setResolved}) => {

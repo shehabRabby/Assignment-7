@@ -1,21 +1,9 @@
-import React from "react";
 import { toast } from "react-toastify";
 
-const TaskStatus = ({
-  data,
-  setData,
-  pickCard,
-  setPickCard,
-  resolved,
-  setResolved,
-}) => {
-  // console.log(pickCard)
-
+const TaskStatus = ({ data, setData, pickCard, setPickCard, setResolved }) => {
   const handleComplete = (card) => {
-    // console.log('compelete button')
-    // console.log(card)
-
-    setPickCard(pickCard.filter((items) => items.id !== card.id));
+    const newCradsResolved = pickCard.filter((crd) => crd.id !== card.id);
+    setPickCard([...newCradsResolved]);
 
     let upgradeCard = { ...card };
 
@@ -24,8 +12,7 @@ const TaskStatus = ({
     }
 
     setResolved((element) => [...element, upgradeCard]);
-    setData(data.filter((elemnts)=> elemnts.id !== card.id));
-
+    setData(data.filter((elemnts) => elemnts.id !== card.id));
 
     toast(`${card.title} marked as Complete 🏆🏆`);
   };
@@ -40,10 +27,13 @@ const TaskStatus = ({
         </p>
       )}
 
-      {pickCard.map((card, index) => {
+      {pickCard.map((card) => {
         return (
-          <div className="bg-white p-3 rounded-sm shadow-sm mb-2 hover:bg-green-100">
-            <h2 className="font-semibold">{card.title}</h2>
+          <div
+            key={card.id}
+            className="bg-white p-3 rounded-sm shadow-sm mb-2 hover:bg-green-100"
+          >
+            <h2 className="font-semibold"> {card.title}</h2>
             <button
               onClick={() => handleComplete(card)}
               className="bg-green-600 text-white w-full py-1 font-mono rounded-sm shadow-sm cursor-pointer mt-2"
