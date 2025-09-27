@@ -3,7 +3,6 @@ import React from "react";
 const Resolved = ({resolved, setResolved }) => {
   return (
     <div>
-      {/* resolve button  */}
       <h3 className="text-xl font-bold mb-2">Resolved Task</h3>
 
       {resolved.length == 0 ? (

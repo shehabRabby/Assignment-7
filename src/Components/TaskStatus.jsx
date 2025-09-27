@@ -14,6 +14,7 @@ const TaskStatus = ({
   const handleComplete = (card) => {
     // console.log('compelete button')
     // console.log(card)
+
     setPickCard(pickCard.filter((items) => items.id !== card.id));
 
     let upgradeCard = { ...card };
@@ -23,6 +24,9 @@ const TaskStatus = ({
     }
 
     setResolved((element) => [...element, upgradeCard]);
+    setData(data.filter((elemnts)=> elemnts.id !== card.id));
+
+
     toast(`${card.title} marked as Complete 🏆🏆`);
   };
 
